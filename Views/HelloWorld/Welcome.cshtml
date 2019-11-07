@@ -6,3 +6,12 @@
 <hr>
 
 <p>@ViewData["Message"]</p>
+
+<h3>Movie List</h3>
+<hr>
+<ul>
+    @for (int i = 0; i < (int)ViewData["NumTimes"]; i++)
+    {
+        <li>@ViewData["Message"]</li>
+    }
+</ul>
